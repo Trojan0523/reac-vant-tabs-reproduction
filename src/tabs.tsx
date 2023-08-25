@@ -2,7 +2,7 @@
  * @Author: BuXiongYu
  * @Date: 2023-08-24 14:23:41
  * @LastEditors: BuXiongYu
- * @LastEditTime: 2023-08-24 17:17:43
+ * @LastEditTime: 2023-08-25 19:20:21
  * @Description: 请填写简介
  */
 import { useCallback, useEffect, useMemo, useState } from 'react'
@@ -69,6 +69,8 @@ const TabsComponent = (props: { showBodySizeFlag: boolean }) => {
         onChange={handleTabChange}
         defaultActive='BODY_SIZE'
         stickyInitScrollbar={true}
+        animated
+        border
         // key={TabList.length}
       >
         {

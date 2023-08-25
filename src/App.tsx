@@ -2,7 +2,7 @@
  * @Author: BuXiongYu
  * @Date: 2023-08-24 14:04:39
  * @LastEditors: BuXiongYu
- * @LastEditTime: 2023-08-24 17:28:38
+ * @LastEditTime: 2023-08-25 19:20:18
  * @Description: 请填写简介
  */
 import { useEffect, useState } from 'react'
@@ -23,10 +23,12 @@ function App() {
   }, [])
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column' }}>
-      <Button style={{ width: '120px' }} type='primary' onClick={() => setFlag(!flag)}>切换</Button>
+    <>
+      <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+        <Button style={{ width: '120px' }} type='primary' onClick={() => setFlag(!flag)}>切换</Button>
+      </div>
       <TabsComponent showBodySizeFlag={flag} />
-    </div>
+    </>
   )
 }
 
