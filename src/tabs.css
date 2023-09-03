@@ -24,8 +24,7 @@
         .cv-tab {
           font-size: 14px;
           line-height: 20px;
-          @include font-Avenir-Heavy();
-          color: $black;
+          color: black;
         }
         .cv-tabs__line {
           height: 2px;
